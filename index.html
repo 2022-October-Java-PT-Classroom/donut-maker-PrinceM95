@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Donut Clicker</title>
+    <title>Donut Clicker Game</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container"></div>
-    <script src="./index.js"></script>
+    <header>
+      <div id="navbar">
+        <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank" rel="noopener noreferrer">Inspiration of Game</a>
+        <a href="#company">About Fred the Baker Baking Company</a>
+        <a href="#contact"></a> 
+      </div>
+    </header>
+
+        <button id="myBtn">About Me</button>
+        <div id="myModal" class="modal">
+
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>I am an eager, dedicated learner transitioning into a Web Development role currently in the process of 
+          completing We Can Code IT Bootcamp! </p>
+          <ul style="list-style-type:none">
+          <li><a href="https://github.com/PrinceM95" target="_blank" rel="noopener noreferrer">My Github Page</a></li>
+          <li><a href="https://princem95.github.io/" target="_blank" rel="noopener noreferrer">My Portfolio</a></li>
+    </div>  
+
+    <div class="container">
+      <h1>Donut Clicker Game</h1>
+      <img src="donut.png" alt="" />
+
+      <div class="game_controls">
+        <!-- <a href="" onclick="reset">Reset</a> -->
+        Number of donuts:
+        <span id="donut_quantity">0</span><br />
+        <button id="donut_creator">Create a Donut</button><br /><br />
+
+        <mark>Auto Clicker Cost: 100</mark> <br /><br />
+        Number of Auto Clickers:<span id="auto_clicker_quantity"> 0</span>
+        <br />
+        <button id="auto_clicker">Buy Auto Clicker</button><br /><br />
+
+        <mark>Donut Multiplier Cost:10</mark><br /><br />
+        Number of Donut Multiplier: <span id="donut_multiplier_count"> 0</span>
+        <br />
+
+        <button id="donut_multiplier">Buy Donut Multiplier</button>
+        <p><br><a href="" onclick="reset">Reset Here</a></p></br>
+      </div>
+    </div>
+    <script src="donut-maker.js"></script>
   </body>
 </html>
